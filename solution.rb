@@ -9,6 +9,7 @@ class Customer
 
   def initialize(full_name)
     @full_name = full_name
+    @review = []
     @@all << self
   end
 
@@ -76,6 +77,7 @@ class Restaurant
 
   def initialize(name)
     @name = name
+    @review = []
     #@review <<
     #@review = Review.all.select {|review_inst| review_inst.restaurant.name == name}
     @@all << self
